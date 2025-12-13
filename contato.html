@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="menu-fixo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="btn-tema" class="btn-tema">Alterar tema</button>
+    </header>
+
+    <main style="max-width: 600px;">
+        <h1>// ENTRE EM CONTATO</h1>
+        <p>Preencha os dados abaixo para contato direto.</p>
+
+        <form id="form-contato">
+            
+            <div class="campo-form">
+                <label for="nome"> Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome...">
+                <span class="erro" id="erro-nome"></span>
+            </div>
+
+            <div class="campo-form">
+                <label for="email">Endereço Eletrônico:</label>
+                <input type="text" id="email" placeholder="nome@dominio.com">
+                <span class="erro" id="erro-email"></span>
+            </div>
+
+            <div class="campo-form">
+                <label for="mensagem">Dados da Mensagem:</label>
+                <textarea id="mensagem" rows="5" placeholder="Sua mensagem aqui..."></textarea>
+                <span class="erro" id="erro-msg"></span>
+            </div>
+
+            <button type="submit" class="btn-enviar">Transmitir Dados</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

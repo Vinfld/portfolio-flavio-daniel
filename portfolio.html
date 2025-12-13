@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="modo-invertido">
+    <header class="menu-fixo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html" class="active">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="btn-tema" class="btn-tema">Alterar tema</button>
+    </header>
+
+    <main>
+        <h1>// MEUS PROJETOS</h1>
+        
+        <div style="text-align: center; padding: 40px 20px; border: 2px dashed #4CAF50; border-radius: 10px; margin-bottom: 50px; background-color: rgba(76, 175, 80, 0.1);">
+            <h2 style="font-size: 2rem; margin-bottom: 10px;">Portfólio em construção 🚧</h2>
+            <p style="font-size: 1.2rem;">Coisas boas estão por vir.</p>
+        </div>
+
+        <h2>// PROJETOS ACADÊMICOS E PRÁTICOS</h2>
+        <p style="margin-bottom: 30px;">Aplicações desenvolvidas durante a graduação e estudos práticos.</p>
+
+        <div class="projetos-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+            
+            <div class="cartao-projeto">
+                <div>
+                    <h3>Sistema de Vendas (Python)</h3>
+                    <p style="font-size: 0.9rem; margin-top: 10px; margin-bottom: 15px;">
+                        Aplicação de linha de comando (CLI) para gerenciamento de pedidos em uma loja.
+                        Implementa lógica de controle (if/else), loops (while) para múltiplos pedidos, validação de inputs e cálculo financeiro.
+                    </p>
+                    <div style="border: 1px solid #333; border-radius: 5px; overflow: hidden;">
+                        <img src="python.png.png" alt="Sistema de Vendas em Python" style="width: 100%; display: block;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao-projeto">
+                <div>
+                    <h3>Modelagem de Banco de Dados (MER)</h3>
+                    <p style="font-size: 0.9rem; margin-top: 10px; margin-bottom: 15px;">
+                        Desenvolvimento de um Modelo Entidade-Relacionamento para sistema de gestão hoteleira. 
+                        Estruturação de entidades (Hóspede, Reserva, Quarto), relacionamentos e cardinalidades.
+                    </p>
+                    <div style="border: 1px solid #333; border-radius: 5px; overflow: hidden;">
+                        <img src="mer.png.png" alt="Diagrama MER Hotel" style="width: 100%; display: block;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao-projeto">
+                <div>
+                    <h3>Treinamento de Rede Neural (Perceptron)</h3>
+                    <p style="font-size: 0.9rem; margin-top: 10px; margin-bottom: 15px;">
+                        Simulação e treinamento de um neurônio artificial (Perceptron). 
+                        Demonstração do ajuste iterativo dos pesos e viés (Bias) até a estabilização (Época 62), resultando em classificação correta.
+                    </p>
+                    <div style="border: 1px solid #333; border-radius: 5px; overflow: hidden;">
+                        <img src="neuro.png.png" alt="Cálculo Perceptron Excel" style="width: 100%; display: block;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
