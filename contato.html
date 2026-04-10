@@ -8,6 +8,11 @@
 </head>
 <body>
     <header class="menu-fixo">
+        <div class="menu-fixo-topo">
+            <button id="btn-hamburguer" class="btn-hamburguer">[≡]</button>
+            <span style="font-weight: bold; text-transform: uppercase; font-size: 0.9rem;">FD.DEV</span>
+            <button id="btn-tema" class="btn-tema">Tema</button>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Sobre</a></li>
@@ -16,24 +21,23 @@
                 <li><a href="contato.html" class="active">Contato</a></li>
             </ul>
         </nav>
-        <button id="btn-tema" class="btn-tema">Alterar tema</button>
     </header>
 
     <main style="max-width: 600px;">
         <h1>// ENTRE EM CONTATO</h1>
-        <p>Preencha os dados abaixo para contato direto.</p>
+        <p style="margin-bottom: 30px;">Preencha os dados abaixo para contato direto.</p>
 
         <form id="form-contato">
-            
+
             <div class="campo-form">
-                <label for="nome"> Nome:</label>
-                <input type="text" id="nome" placeholder="Digite seu nome...">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome..." autocomplete="name">
                 <span class="erro" id="erro-nome"></span>
             </div>
 
             <div class="campo-form">
                 <label for="email">Endereço Eletrônico:</label>
-                <input type="text" id="email" placeholder="nome@dominio.com">
+                <input type="email" id="email" placeholder="nome@dominio.com" autocomplete="email">
                 <span class="erro" id="erro-email"></span>
             </div>
 
